@@ -1,0 +1,42 @@
+@import "src/styles/style";
+@import "src/styles/media";
+@import "src/styles/custom-slider";
+@import "src/styles/custom-input-file";
+@import "src/styles/custom-select";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+
+  input {
+    all: unset;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:visited {
+      all: unset;
+    }
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.73);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.52);
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+}
+
+input::placeholder {
+  opacity: 1;
+  color: #272733;
+}
