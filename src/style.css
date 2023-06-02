@@ -1,4 +1,39 @@
 @charset "UTF-8";
+.container {
+  padding: 0 20%;
+}
+
+.header {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background: rgba(16, 16, 29, 0.9);
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.header__logo {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu-link {
+  margin-right: 60px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.header__menu-link:hover {
+  color: #42A9ED;
+}
+
 .section-main {
   padding-top: 203px;
 }
@@ -109,6 +144,39 @@
   height: 48px;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  align-items: center;
+  height: 80px;
+  background: #3D4050;
+  color: #FFFFFF;
+}
+.footer__item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  border-right: 1px solid white;
+  width: 100%;
+}
+.footer__item:last-of-type {
+  border-right: none;
+}
+.footer__img {
+  margin-right: 10px;
+}
+.footer__payment {
+  color: #C3C3C3;
+}
+.footer__contacts {
+  cursor: pointer;
+}
+.footer__text {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
 @media (max-width: 1920px) {
   .section-order__item::after {
     left: 125px;
@@ -207,11 +275,11 @@
   .section-main__title {
     font-size: 28px;
   }
+  .order-form__range {
+    font-size: 14px;
+  }
   .form .btn {
     width: 100%;
-  }
-  .form-subtext {
-    font-size: 14px;
   }
 }
 .range-input {
@@ -333,7 +401,7 @@
 .select__header__close {
   display: none;
 }
-.select__header__active .select__header_open {
+.select__header__active .select__header__open {
   display: none;
 }
 .select__header__active .select__body {
@@ -408,11 +476,6 @@ input::placeholder {
   color: #42A9ED;
 }
 
-.container {
-  padding-right: 20%;
-  padding-left: 20%;
-}
-
 .btn {
   border-radius: 4px;
   height: 43px;
@@ -443,70 +506,6 @@ input::placeholder {
   background: url("assets/img/section-main-bg.png") no-repeat;
   background-size: cover;
   padding-bottom: 95px;
-}
-
-.header {
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  background: rgba(16, 16, 29, 0.9);
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-.header__logo {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 33px;
-}
-.header__menu {
-  display: flex;
-  justify-content: space-between;
-}
-.header__menu-link {
-  margin-right: 60px;
-  font-size: 13px;
-  cursor: pointer;
-}
-.header__menu-link:hover {
-  color: #42A9ED;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
-  align-items: center;
-  height: 80px;
-  background: #3D4050;
-  color: #FFFFFF;
-}
-.footer__item {
-  display: flex;
-  justify-content: space-between;
-  font-size: 13px;
-  border-right: 1px solid white;
-  width: 100%;
-}
-.footer__item:last-of-type {
-  border-right: none;
-}
-.footer__img {
-  margin-right: 10px;
-}
-.footer__payment {
-  color: #C3C3C3;
-}
-.footer__contacts {
-  cursor: pointer;
-}
-.footer__text {
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
