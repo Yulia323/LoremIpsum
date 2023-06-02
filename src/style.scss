@@ -1,8 +1,8 @@
-@import "src/styles/style";
-@import "src/styles/media";
-@import "src/styles/custom-slider";
-@import "src/styles/custom-input-file";
-@import "src/styles/custom-select";
+@import "./styles/mainPage";
+@import "./styles/media";
+@import "./styles/custom-range";
+@import "./styles/custom-input-file";
+@import "./styles/custom-select";
 
 * {
   margin: 0;
@@ -39,4 +39,119 @@
 input::placeholder {
   opacity: 1;
   color: #272733;
+}
+
+.text_blue {
+  color: #42A9ED;
+}
+
+.container {
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.btn {
+  border-radius: 4px;
+  height: 43px;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 1px solid #6F6D7B;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.btn:hover {
+  background: rgba(11, 16, 29, 0.4);
+  color: #FFFFFF;
+}
+
+.btn:active {
+  background: rgba(16, 16, 29, 0.6);
+}
+
+.btn_blue {
+  border-color: #FFFFFF;
+  background: #3E9CDC;
+  color: #FFFFFF;
+}
+
+.app {
+  background: url("assets/img/section-main-bg.png") no-repeat;
+  background-size: cover;
+  padding-bottom: 95px;
+}
+
+.header {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background: rgba(16, 16, 29, 0.9);
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  &__logo {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+
+    &-link {
+      margin-right: 60px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    &-link:hover {
+      color: #42A9ED;
+    }
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  align-items: center;
+  height: 80px;
+  background: #3D4050;
+  color: #FFFFFF;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    border-right: 1px solid white;
+    width: 100%;
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+
+  &__img {
+    margin-right: 10px;
+  }
+
+  &__payment {
+    color: #C3C3C3;
+  }
+
+  &__contacts {
+    cursor: pointer;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
 }

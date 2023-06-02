@@ -1,80 +1,81 @@
 @media (max-width: 1920px) {
-  .section-order-item::after {
+  .section-order__item::after {
     left: 125px;
   }
 }
 
 @media (max-width: 1600px) {
-  .section-order-item::after {
+  .section-order__item::after {
     left: 138px;
   }
 
   .container {
-    padding: 0 10%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
 @media (max-width: 1400px) {
   .container {
-    padding: 0 3%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
 
 @media (max-width: 1024px) {
-  .section-order-item::after {
+  .header__menu-link {
+    margin-right: 20px;
+  }
+
+  .section-order__item::after {
     left: 134px;
   }
-  .section-order-item {
-    p {
+
+  .section-order__item {
+    &-text {
       font-size: 12px;
     }
   }
+
   .footer {
     grid-template-columns: 25% 40% 35%;
 
-    div p, a {
+    .footer__text {
       padding: 0 10px;
     }
   }
-  .header-menu a {
-    padding-right: 20px;
-  }
-  .form {
+
+  .order-form {
     grid-template-columns: 1fr 1fr;
   }
-  .input-wrapper {
+
+  .input-file {
     grid-column: 1/3;
   }
-  .form-submit {
+
+  .order-form__submit {
     grid-column: 1/3;
 
-    button {
+    &__btn {
       width: 100%;
     }
   }
-  .form-subtext {
-    grid-column: 2/3;
+  .input_file__container {
+    grid-column: 1/3;
   }
 }
 
 @media (max-width: 768px) {
-  .form {
-    display: flex;
-    flex-direction: column;
-
-    &-submit button {
-      margin: 0;
-    }
-  }
-  .section-order-item::after {
+  .section-order__item::after {
     content: none;
   }
+
   .footer {
-    div {
+    .footer__item {
       border-right: none;
       font-size: 12px;
 
-      p, a {
+      .footer__text {
         padding: 0 5px;
       }
     }
@@ -82,45 +83,51 @@
 }
 
 @media (max-width: 667px) {
-  .footer {
-    display: flex;
+  .header {
     flex-direction: column;
     justify-content: space-around;
   }
 
-  header {
+  .order-form {
+    display: flex;
     flex-direction: column;
-    justify-content: space-around !important;
   }
 
-  .section-main-title {
+  .section-main__title {
     font-size: 36px;
   }
 
-  .section-order-chart {
+  .section-order__chart {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 414px) {
-  .header-logo {
+  .header__logo {
     font-size: 24px;
   }
 
-  .header-menu a {
+  .header__menu-link {
     font-size: 10px;
   }
 
-  .section-main-title {
+  .section-main__title {
     font-size: 28px;
   }
 
-  .form button {
+  .form .btn {
     width: 100%;
   }
+
   .form-subtext {
     font-size: 14px;
   }

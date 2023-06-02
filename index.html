@@ -10,107 +10,105 @@
 </head>
 <body>
 
-<div class="wrapper">
+<div class="app">
     <header class="header container">
-        <h1 class="header-logo">LoremIpsum.<span class="clr_blue">Net</span></h1>
-        <div class="header-menu">
-            <a>Бизнес</a>
-            <a>О нас</a>
-            <a>Цены</a>
-            <a>Оформить заказ</a>
+        <h1 class="header__logo">LoremIpsum.<span class="text_blue">Net</span></h1>
+        <div class="header__menu">
+            <a class="header__menu-link">Бизнес</a>
+            <a class="header__menu-link">О нас</a>
+            <a class="header__menu-link">Цены</a>
+            <a class="header__menu-link">Оформить заказ</a>
         </div>
     </header>
 
     <div class="section-main container">
-        <div>
-            <p class="section-main-title">
-                <span class="clr_blue">Lorem ipsum</span> dolor sit ametconsectetur
-                <span class="clr_blue">adipiscing</span></p>
-            <div class="section-main-list">
-                <h4>At vero eos et accusamus et iusto odio dignissimos ducimus!</h4>
-                <ul class="section-main-info">
-                    <li>Totam rem aperiam eaque ipsa</li>
-                    <li>Sit voluptatem accusantium doloremque laudantium</li>
-                    <li>Sed ut perspiciatis, unde omnis iste natus error</li>
-                </ul>
-            </div>
-            <div class="section-main-btns">
-                <button class="btn btn-blue">Заказать</button>
-                <button class="btn">Подробнее</button>
-            </div>
+        <p class="section-main__title">
+            <span class="text_blue">Lorem ipsum</span> dolor sit ametconsectetur
+            <span class="text_blue">adipiscing</span></p>
+        <div class="section-main__list">
+            <h4 class="section-main__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</h4>
+            <ul class="section-main__info">
+                <li class="section-main__info-item">Totam rem aperiam eaque ipsa</li>
+                <li class="section-main__info-item">Sit voluptatem accusantium doloremque laudantium</li>
+                <li class="section-main__info-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+        </div>
+        <div class="section-main__btns">
+            <button class="btn btn_blue">Заказать</button>
+            <button class="btn">Подробнее</button>
         </div>
     </div>
 </div>
 
 <div class="section-order container">
 
-    <div class="section-order-title">
-        <h1>Оформление <span class="clr_blue">заказа</span></h1>
-        <p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+    <div class="section-order__title">
+        <h1 class="section-order__title-heading">Оформление <span class="text_blue">заказа</span></h1>
+        <p class="section-order__title-description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
     </div>
 
-    <div class="section-order-chart">
-        <div class="section-order-item">
-            <img src="src/assets/img/chart/chart-01.png" alt="chart">
-            <p>Lorem ipsum dolor sit amet</p>
+    <div class="section-order__chart">
+        <div class="section-order__item">
+            <img class="section-order__item-image" src="src/assets/img/chart/chart-01.png" alt="chart">
+            <p class="section-order__item-text">Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="section-order-item">
-            <img src="src/assets/img/chart/chart-02.png" alt="chart">
-            <p>Сonsecteturadipiscing elit</p>
-        </div>
-
-        <div class="section-order-item">
-            <img src="src/assets/img/chart/chart-03.png" alt="chart">
-            <p>Sed do eiusmod tempor</p>
+        <div class="section-order__item">
+            <img class="section-order__item-image" src="src/assets/img/chart/chart-02.png" alt="chart">
+            <p class="section-order__item-text">Сonsecteturadipiscing elit</p>
         </div>
 
-        <div class="section-order-item">
-            <img src="src/assets/img/chart/chart-04.png" alt="chart">
-            <p>Esse cillum dolore eu fugiat</p>
+        <div class="section-order__item">
+            <img class="section-order__item-image" src="src/assets/img/chart/chart-03.png" alt="chart">
+            <p class="section-order__item-text">Sed do eiusmod tempor</p>
         </div>
 
-        <div class="section-order-item">
-            <img src="src/assets/img/chart/chart-05.png" alt="chart">
-            <p>Excepteur sint occaecat<br> cupidatat non proident</p>
+        <div class="section-order__item">
+            <img class="section-order__item-image" src="src/assets/img/chart/chart-04.png" alt="chart">
+            <p class="section-order__item-text">Esse cillum dolore eu fugiat</p>
+        </div>
+
+        <div class="section-order__item">
+            <img class="section-order__item-image" src="src/assets/img/chart/chart-05.png" alt="chart">
+            <p class="section-order__item-text">Excepteur sint occaecat<br> cupidatat non proident</p>
         </div>
     </div>
 
-    <form class="form" id="form-order">
-        <div id="select" class="select form-item">
-            <div id="selectHeader" class="select-header">
+    <form class="order-form" id="formOrder">
+        <div class="select order-form__item" id="orderSelect">
+            <div class="select__header" id="selectHeader">
                 <span id="selectCurrent">Выберите тип системы</span>
-                <img class="select-open" src="src/assets/img/select/select-open.svg">
-                <img class="select-close" src="src/assets/img/select/select-close.svg">
+                <img class="select__header__open" src="src/assets/img/select/select-open.svg">
+                <img class="select__header__close" src="src/assets/img/select/select-close.svg">
             </div>
-            <div class="select-body">
-                <ul id="selectBody">
-                    <li class="select-item">Sed ut perspiciatis</li>
-                    <li class="select-item">Nemo enim ipsam</li>
-                    <li class="select-item">Et harum quidem</li>
-                    <li class="select-item">Temporibus autem</li>
-                    <li class="select-item">Itaque earum rerum</li>
+            <div class="select__body">
+                <ul class="select__list" id="selectList">
+                    <li class="select__item">Sed ut perspiciatis</li>
+                    <li class="select__item">Nemo enim ipsam</li>
+                    <li class="select__item">Et harum quidem</li>
+                    <li class="select__item">Temporibus autem</li>
+                    <li class="select__item">Itaque earum rerum</li>
                 </ul>
             </div>
         </div>
-        <input class="form-item" type="email" name="email" placeholder="Ваш e-mail">
-        <input class="form-item" type="text" name="name" placeholder="Ваше имя">
-        <div class="form-subtext">
-            <p>Sed ut perspiciatis, unde omnis iste natus
-                <span id="sliderPercent" class="form-percent">75%</span>
-            </p>
-            <input id="sliderInput" class="form-slider" type="range" min="0" max="100" value="75" step="1">
+
+        <input class="order-form__item" type="email" name="email" placeholder="Ваш e-mail">
+        <input class="order-form__item" type="text" name="name" placeholder="Ваше имя">
+
+        <div class="order-form__range">
+            <p>Sed ut perspiciatis, unde omnis iste natus<span class="order-form__range__percent" id="rangePercent">75%</span></p>
+            <input class="order-form__range__input range-input" id="rangeInput" type="range" min="0" max="100" value="75" step="1">
         </div>
-        <div class="input-wrapper form-item">
-            <input name="file" type="file" id="inputFile" class="input input-file" multiple>
-            <label for="inputFile" class="input-file-button">
-                    <span class="input-file-icon-wrapper">
-                        <img class="input-file-icon" src="src/assets/img/add.svg" alt="" width="25">
-                    </span>
-                <span class="input-file-button-text" id="inputLabel">Прикрепить файл</span>
+
+        <div class="input_file__container">
+            <input class="input-file" id="inputFile" name="file" type="file" multiple>
+            <label class="input-file__button" for="inputFile">
+                <span class="input-file__icon"><img src="src/assets/img/add.svg" alt="" width="25"></span>
+                <span class="input-file__text" id="inputFileText">Прикрепить файл</span>
             </label>
         </div>
-        <div class="form-submit">
-            <button type="submit" class="btn btn-blue">Отправить</button>
+
+        <div class="order-form__submit">
+            <button type="submit" class="order-form__submit__btn btn btn_blue">Отправить</button>
         </div>
     </form>
 
@@ -119,26 +117,28 @@
 </div>
 
 <footer class="footer container">
-    <div>© 2018 «LoremIpsum.net» Все права защищены.</div>
-    <div class="footer-payment">
-        <p>
-            <img src="src/assets/img/footer/qiwi.svg" alt="">
+    <div class="footer__item">© 2018 «LoremIpsum.net» Все права защищены.</div>
+    <div class="footer__item footer__payment">
+        <p class="footer__text">
+            <img class="footer__img" src="src/assets/img/footer/qiwi.svg" alt="">
             <span>Qiwi wallet</span>
         </p>
-        <p>
-            <img src="src/assets/img/footer/yandex-money.svg" alt="">
+        <p class="footer__text">
+            <img class="footer__img" src="src/assets/img/footer/yandex-money.svg" alt="">
             <span>Yandex Money</span>
         </p>
-        <p><img src="src/assets/img/footer/web-money.svg" alt="">
+        <p class="footer__text">
+            <img class="footer__img" src="src/assets/img/footer/web-money.svg" alt="">
             <span>Web Money</span>
         </p>
     </div>
-    <div class="footer-contacts">
-        <a href="#"><img src="src/assets/img/footer/mail.svg" alt="">
+    <div class="footer__item footer-contacts">
+        <a class="footer__text" href="#">
+            <img class="footer__img" src="src/assets/img/footer/mail.svg" alt="">
             <span>info@ipsum228.com</span>
         </a>
-        <a href="#">
-            <img src="src/assets/img/footer/vk.svg" alt="">
+        <a class="footer__text" href="#">
+            <img class="footer__img" src="src/assets/img/footer/vk.svg" alt="">
             <span>Мы вконтакте</span>
         </a>
     </div>
